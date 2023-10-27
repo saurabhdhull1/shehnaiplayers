@@ -29,7 +29,7 @@ export const Footer = () => {
             </a>
             <a 
             className='scroll-to-top'
-            href="https://www.facebook.com/shehnaiplayer/"
+            href="https://www.facebook.com/shahnaiplayer/"
             target="_blank"
             rel="noreferrer"
             style={{ background: '#3b5998', color:'white'}}>

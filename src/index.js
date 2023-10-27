@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider } from 'react-router-dom';
+import { RouterProvider, useLocation } from 'react-router-dom';
 import router from './routes/routes'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
