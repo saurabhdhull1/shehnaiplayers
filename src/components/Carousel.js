@@ -5,7 +5,7 @@ import { s1, s2, s3, s4, s5 } from "../Pages/export";
 import main from "../assets/img/main.jpg"
 
 const CarouselComponent = () => {
-  let img = [main, s1, s2, s3, s4, s5];
+  let img = [main, s1, s2, s4, s5];
   return (
     <Carousel autoPlay interval={2000} infiniteLoop>
       {img.map((item, index) => (

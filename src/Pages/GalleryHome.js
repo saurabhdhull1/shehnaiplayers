@@ -20,10 +20,9 @@ import {
   g16,
   g17,
   g18,
-} from "../Pages/export";
-import { MDBCard, MDBCol, MDBRow } from "mdb-react-ui-kit";
+} from "./export";
 
-const Gallery = () => {
+const GalleryHome = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -76,23 +75,24 @@ const Gallery = () => {
                 captures the beauty and <br /> craftsmanship of this traditional
                 musical instrument.
               </p>
-              <MDBRow style={{ background:'var(--gradient)' }} className="py-2 rounded-3">
-              {images.map((image, index) => (
-                <MDBCol md="4" key={`gallery${index}`} className="p-3">
-                  <MDBCard className="overflow-hidden shadow-lg p-3" style={{ background:'var(--background)', borderRadius:'14px',}}>
-                  <div className="item">
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+                className="owl-carousel owl-theme skill-slider"
+              >
+                {images.map((image, index) => (
+                  <div className="item" key={`galleryHome${index}`}>
                     <img
                       src={image.src}
                       alt={image.alt}
-                      style={{ borderRadius: "14px", marginBottom:'15px' }}
+                      style={{ borderRadius: "14px" }}
                     />
                     <h5>{image.title}</h5>
                   </div>
-                  </MDBCard>
-                </MDBCol>
-              ))}
-            </MDBRow>
-             
+                ))}
+              </Carousel>
             </div>
           </div>
         </div>
@@ -101,4 +101,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default GalleryHome;

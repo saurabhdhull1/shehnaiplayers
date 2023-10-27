@@ -30,6 +30,9 @@ code {
     monospace;
 }
 
+.thumbs{
+  display: none;
+}
 
 ::-webkit-scrollbar {
   width: 12px;

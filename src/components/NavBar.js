@@ -57,7 +57,7 @@ export const NavBar = () => {
               alt="Logo"
               style={{ width: "50px", height: "50px" }}
             />{" "}
-            <span style={{ fontSize: "24px", color: "var(--color)", textShadow:'1px 1px 10px var(--color2)' }}>
+            <span className="logoName" style={{ fontSize: "24px", color: "var(--color)", textShadow:'1px 1px 10px var(--color2)' }}>
               Shehnai Player
             </span>
           </Navbar.Brand>
@@ -99,7 +99,7 @@ export const NavBar = () => {
               <DarkMode />
               <FullScreenButton/>
               <button
-                // className="navbar"
+                className="myNavbarBtn"
                 onClick={() => navigate("/contact")}
               >Contact Us</button>
             </span>

@@ -74,6 +74,29 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+@media (max-width: 768px) {
+  .logoName {
+    display: none;
+  }
+  .navbar-link{
+    text-align: center;
+    box-shadow: .2px .2px 10px var(--color);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 12px;
+    border: 1px solid var(--color);
+  }
+  .project .nav.nav-pills {
+    width: 100% !important;
+  }
+  .connect{
+    padding: 15px;
+  }
+  #contactSend{
+    width: calc(100vw - 20px);
+  }
+}
+
 p.success {
 	color: green;
 }

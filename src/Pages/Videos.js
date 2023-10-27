@@ -10,6 +10,13 @@ const Videos = () => {
     { videoId: "rfhCfs72rLA" },
     { videoId: "E9uq4qi1cg0" },
     { videoId: "08Mh8Sbrwyo" },
+    { videoId: "vD4IB_umAEw" },
+    { videoId: "xS8JiwsRicg" },
+    { videoId: "1dLXlmsrPrg" },
+    { videoId: "6aCWEvMs_XY" },
+    { videoId: "ffciOxm_1MM" },
+    { videoId: "hq1ZuvGgSLI" },
+    // { videoId: "GI0D1ykDndY" },
   ];
 
   const opts = {
