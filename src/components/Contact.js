@@ -27,27 +27,19 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Data being sent to the server:", {
-      firstName: formDetails.firstName,
-      lastName: formDetails.lastName,
-      email: formDetails.email,
-      phone: formDetails.phone,
-      message: formDetails.message,
-    });
+    console.log("Data being sent to the server:", { ...formDetails });
     setButtonText("Sending...");
 
     try {
-      const response = await axios.post("https://shehnaiplayer.com/contact.php", {
-        firstName: formDetails.firstName,
-        lastName: formDetails.lastName,
-        email: formDetails.email,
-        phone: formDetails.phone,
-        message: formDetails.message,
-      }, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await axios.post(
+        "https://shehnaiplayer.com/contactHandler.php", 
+        { ...formDetails },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
       console.log("Server response:", response.data);
 
@@ -64,6 +56,7 @@ export const Contact = () => {
       setFormDetails(formInitialDetails);
     }
   };
+  
 
   const location = useLocation();
 
