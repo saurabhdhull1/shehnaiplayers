@@ -13,7 +13,7 @@ const About = () => {
   const location = useLocation();
 
   return (
-    <section className="project" id="projects" style={ location.pathname === '/about' ? {paddingTop:'200px',background:'var(--gradient)' } : {background:'var(--gradient)' }}>
+    <section className="project" id="projects" style={ location.pathname === '/about' ? {paddingTop:'100px',background:'var(--gradient)' } : {background:'var(--gradient)' }}>
       <Container>
         <Row>
           <Col size={12}>
@@ -21,7 +21,7 @@ const About = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>About Us</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Discover the essence of Shehnai mastery at Shehnai Players. Our skilled musicians blend tradition with expertise, offering soulful performances for your special moments. Elevate your events with the timeless charm of Shehnai music. Welcome to a world where melodies speak volumes.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item style={{ cursor: "pointer" }} >

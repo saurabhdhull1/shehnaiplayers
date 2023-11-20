@@ -47,7 +47,7 @@ export const Contact = () => {
   const location = useLocation();
 
   return (
-    <section className="contact" id="connect" style={ location.pathname === '/contact' ? {paddingTop:'200px' } : { } }>
+    <section className="contact" id="connect" style={ location.pathname === '/contact' ? {padding: '200px 10px' } : { } }>
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>

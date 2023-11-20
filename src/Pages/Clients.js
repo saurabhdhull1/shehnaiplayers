@@ -47,10 +47,8 @@ function Clients() {
         <MDBCol md="10" xl="8" className="text-center">
           <h1 className="mb-4">Our Clients</h1>
 
-          <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            error amet numquam iure provident voluptate esse quasi, veritatis
-            totam voluptas nostrum quisquam eum porro a pariatur veniam.
+          <p className="mb-4 pb-2 mb-md-5 pb-md-0 fs-5">
+          Our clients range from weddings to cultural events, each touched by the soulful melodies of our skilled musicians. Elevate your special moments with the harmonious tunes that have delighted our valued clients. Discover the magic of Shehnai music with us.
           </p>
         </MDBCol>
       </MDBRow>

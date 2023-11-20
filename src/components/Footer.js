@@ -10,9 +10,8 @@ import { useLocation } from "react-router-dom";
 export const Footer = () => {
 
   const location = useLocation();
-  console.log(location)
   return (
-    <footer className="footer" style={ location.pathname === '/' ? {} : { marginTop:'200px' } } >
+    <footer className="footer" style={ location.pathname === '/' ? {} : { marginTop:'0px' } } >
       <Container>
         <Row className="align-items-center">
           <MailchimpForm />

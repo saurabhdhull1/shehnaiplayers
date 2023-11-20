@@ -43,7 +43,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="App" style={ location.pathname === '/' || location.pathname === '/contact' || location.pathname === '/about' ? {} : { marginTop:'200px' }} >
+    <div className="App" style={ location.pathname === '/' || location.pathname === '/contact' || location.pathname === '/about' ? {} : { marginTop:'100px' }} >
       <NavBar />
       <Outlet/>
       <Footer />

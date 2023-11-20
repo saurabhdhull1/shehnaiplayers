@@ -66,7 +66,9 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link className={"navbar-link"} onClick={() => navigate("/")}>
+              <Nav.Link 
+                className={"navbar-link"} 
+                onClick={() => navigate("/")}>
                 Home
               </Nav.Link>
               <Nav.Link
@@ -98,11 +100,11 @@ export const NavBar = () => {
             <span className="navbar-text">
               <DarkMode />
               <FullScreenButton/>
-              <button
+            </span>
+            <button
                 className="myNavbarBtn"
                 onClick={() => navigate("/contact")}
               >Contact Us</button>
-            </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>

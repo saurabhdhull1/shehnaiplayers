@@ -66,14 +66,14 @@ const Gallery = () => {
 
   return (
     <section className="skill" id="skills">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Gallery</h2>
               <p>
                 Explore our exquisite collection of Shehnai images. Each image
-                captures the beauty and <br /> craftsmanship of this traditional
+                captures the beauty and craftsmanship of this traditional
                 musical instrument.
               </p>
               <MDBRow style={{ background:'var(--gradient)' }} className="py-2 rounded-3">

@@ -72,7 +72,7 @@ const GalleryHome = () => {
               <h2>Gallery</h2>
               <p>
                 Explore our exquisite collection of Shehnai images. Each image
-                captures the beauty and <br /> craftsmanship of this traditional
+                captures the beauty and craftsmanship of this traditional
                 musical instrument.
               </p>
               <Carousel
